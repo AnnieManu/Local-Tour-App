@@ -147,12 +147,14 @@
        cursor:pointer;
     }
 
-    @include respond(tab-port){
-      //Functionality
-      height: auto;
-      border-radius: 3px;
-      background-color:$color-white;
-      box-shadow:0 1.5rem 4rem rgba($color-black, .15);
+
+   @media only screen and (max-width:56.25em),
+   only screen and (hover:none){
+     //Functionality
+     height: auto;
+     border-radius: 3px;
+     background-color: $color-white;
+     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
 
       &__side{
@@ -179,7 +181,7 @@
         left:0;
         transform:translate(0);
         width:100%;
-        padding:7rem 4rem 4rem 4rem;
+        padding:3rem 1rem 4rem 1rem;
       }
       &__price-box{
         margin-bottom:3rem;
